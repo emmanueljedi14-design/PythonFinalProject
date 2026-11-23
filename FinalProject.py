@@ -8,4 +8,10 @@ def get_valid_hours(activity):
         hours=int(input(f"Enter your weekly {activity} hours:"))
 
     return hours
-     
+def calculate_total_hours(weeklyHours):
+    total = 0
+    for hour in  weeklyHours:
+        total=total+hour
+    
+    return total
+    
