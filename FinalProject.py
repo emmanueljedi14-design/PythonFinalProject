@@ -16,10 +16,12 @@ def calculate_total_hours(weeklyHours):
         total=total+hour
     
     return total
+    #This function calculates the amount of free time we have left
 def  calculate_free_time(totalHours):
     freeTime= 168-totalHours
     
     return freeTime
+     #This function gives scheduling advice
 def give_advice(freeTime):
     if freeTime <0:
        return "Your schedule is overloaded!!"
