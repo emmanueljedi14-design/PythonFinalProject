@@ -20,7 +20,17 @@ def  calculate_free_time(totalHours):
     freeTime= 168-totalHours
     
     return freeTime
+def give_advice(freeTime):
+    if freeTime <0:
+       return "Your schedule is overloaded!!"
+    elif freeTime<= 10:
+       return "You have a very busy schedule."
+    elif freeTime<= 25:
+        return "You have a moderately busy schedule."
+    else:
+        return "You have a good amount of free time!"
 
-totalHours=100
-freeTime = calculate_free_time(totalHours)
-print(freeTime)
+
+freeTime= 50
+advice=give_advice(freeTime)
+print(advice)
