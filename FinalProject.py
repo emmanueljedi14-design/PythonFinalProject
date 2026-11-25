@@ -44,3 +44,5 @@ sleepHours = get_valid_hours("sleep")
 weeklyHours = [workHours,classHours,studyHours,sleepHours]
 totalHours = calculate_total_hours(weeklyHours)
 print(f"Total scheduled hours:{totalHours}")
+freeTime = calculate_free_time(totalHours)
+print(f"Remaining free hours:{freeTime}")
