@@ -32,7 +32,13 @@ def give_advice(freeTime):
     else:
         return "You have a good amount of free time!"
 
+print("Welcome to the Student Work-Study Planner!")
 
-freeTime= 50
-advice=give_advice(freeTime)
-print(advice)
+
+
+workHours = get_valid_hours("work")
+classHours = get_valid_hours("class")
+studyHours = get_valid_hours("study")
+sleepHours = get_valid_hours("sleep")
+
+print(workHours,classHours,studyHours,sleepHours)
