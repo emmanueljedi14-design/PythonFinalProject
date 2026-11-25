@@ -41,4 +41,6 @@ classHours = get_valid_hours("class")
 studyHours = get_valid_hours("study")
 sleepHours = get_valid_hours("sleep")
 
-print(workHours,classHours,studyHours,sleepHours)
+weeklyHours = [workHours,classHours,studyHours,sleepHours]
+totalHours = calculate_total_hours(weeklyHours)
+print(f"Total scheduled hours:{totalHours}")
